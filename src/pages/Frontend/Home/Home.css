@@ -1,0 +1,930 @@
+
+.heroImg
+{
+    height: 90vh;
+    background: linear-gradient(rgba(33,33,33,0.522),rgba(33,33,33,0.522)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/hero-image.jpg?alt=media&token=16a96b7b-67a7-48e8-a084-dabde5ff5382')  , center no-repeat ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+ .homeText
+{
+    text-align: center;
+    color: white;
+}
+
+ .homeText .heroHeading1
+{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    font-family: "Fira Sans"
+}
+
+   
+@media(min-width:1199px)
+{
+.homeText
+{
+    margin-top: 22rem;
+}
+}
+
+
+@media(max-width:1199px)
+{
+.homeText
+{
+    margin-top: 20rem;
+}
+}
+
+@media(max-width:991px)
+{
+.homeText
+{
+    margin-top: 25rem;
+}
+.homeText .heroHeading1
+{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.section2-set
+{
+margin-top: 25rem;
+}
+}
+
+@media(min-width:992px)
+{
+.section2-set
+{
+ margin-top: 20rem;
+}
+}
+
+.service-heading
+{
+    font-family: "Fira Sans";
+    font-size: 2.5rem;
+}
+
+
+@media(max-width:767px)
+{
+.homeText
+{
+    margin-top: 65rem;
+}
+.homeText .heroHeading1
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.section2-set
+{
+ margin-top: 63rem;
+}
+
+.service-heading
+{
+    font-family: "Fira Sans";
+    font-size: 2rem;
+}
+
+
+
+}
+
+ .btn
+{
+    padding: .6rem 1.5rem;
+}
+
+
+
+
+
+
+.cardShadow {
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    transition: .2s ease;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 4px solid #ffbe0b;
+}
+
+.cardShadow a
+{
+color: #ffbe0b;
+font-size: 1.2rem;
+}
+
+.cardShadow:hover p,
+.cardShadow:hover .icon-size , .cardShadow:hover h5 ,.cardShadow:hover a {
+color: white;
+
+}
+
+
+.cardContent {
+z-index: 1;
+text-align: center;
+}
+
+
+.cardShadow::before {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ffbe0b;
+transition: top 0.3s ease;
+}
+
+.cardShadow:hover::before {
+top: 0;
+
+}
+
+.icon-size
+{
+font-size: 4rem;
+color: #ffbe0b;
+}
+
+
+
+
+
+
+
+
+
+
+.testimonials
+{
+
+background : linear-gradient(rgba(33,33,33,0.522),rgba(33,33,33,0.522)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/testimonial-bg.jpg?alt=media&token=dfd51525-5283-4e51-8c3c-c96e6a0a4667') no-repeat top  fixed ;
+margin-top: 10rem;
+text-align: center;
+padding: 10px 0;
+background-size: cover;
+}
+
+.swiper {
+width: 100%;
+}
+
+
+.swiper-slide {
+font-size: 18px;
+/* Center slide text vertically */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.swiper-button-next::after , .swiper-rtl , .swiper-button-prev::after
+{
+content:none;
+}
+
+.testimonials .info-testimonial h3
+{
+    margin-top: 50px;
+font-weight: 500;
+color: #ffbe0b;
+font-style: italic;
+font-size: 32px;
+font-family: "Fira Sans";
+}
+
+.testimonials .info-testimonial p
+{
+font-weight: 500;
+color: white;
+font-style: italic;
+font-size: 52px;
+font-family: "Fira Sans";
+}
+
+
+
+
+
+
+.testimonials .testimonial-item
+{
+box-sizing: content-box;
+min-height: 200px;
+position: relative;
+margin: 30px;
+}
+
+
+.testimonials .testimonial-item .testimonial-img
+{
+width: 90px;
+height: 90px;
+border-radius: 50px;
+border-radius: 6px solid #f4f4f4;
+
+
+}
+
+
+.testimonials .testimonial-item h3
+{
+font-size: 18px;
+font-weight: bold;
+margin: 10px 0 5px 0;
+}
+
+
+.testimonials .testimonial-item h4
+{
+
+font-size: 14px;
+margin:0;
+}
+
+.testimonials .testimonial-item .stars
+{
+margin: 10px 0;
+color: #ffbe0b;
+}
+
+.testimonials .testimonial-item .right-icon
+{
+display: block;
+left: -5px;
+font-size: 2.5rem;
+color: #ffbe0b;
+position: relative;
+}
+
+.testimonials .testimonial-item .left-icon
+{
+display: inline-block;
+
+top: 20px;
+font-size: 2.5rem;
+color: #ffbe0b;
+position: relative;
+
+}
+
+.testimonials .testimonial-item p
+{
+font: italic;
+margin: 15px auto 15px auto;
+}
+
+.testimonials .swiper-wrapper
+{
+height: auto;
+
+}
+
+.testimonials .swiper-pagination
+{
+margin-top: 20px;
+margin-bottom: 20px;
+position: relative;
+}
+
+
+.experiance-img-set
+{
+position: relative;
+width: 80%;
+}
+
+.img-div
+{
+position: relative;
+width: 80%;
+z-index: 1000;
+}
+
+
+
+.inner-div
+{
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    border: 1.3vw solid #ffbe0b;
+    width: 80%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+.second-experiance-section .heading
+{
+font-size: 35px;
+font-style: italic;
+color: #ffbe0b;      
+}
+
+.second-experiance-section .icon-title
+{
+font-size: 35px;
+color: #2e444f;
+font-weight: bold;
+font-family: "Fira Sans";
+}
+
+.second-experiance-section .title
+{
+font-size: 40px;
+font-style: italic;
+font-family: "Fira Sans";
+}
+
+
+@media(max-width:1199px)
+{
+
+.second-experiance-section .heading
+{
+font-size: 30px;
+font-style: italic;
+font-family: "Fira Sans";
+color: #ffbe0b;    
+}
+
+.second-experiance-section .title
+{
+font-size: 30px;
+font-style: italic;
+font-family: "Fira Sans";
+}
+.second-experiance-section .icon-title
+{
+font-size: 40px;
+margin-top: 10px;
+font-style: italic;
+
+}
+
+.consultant-image .font-set
+{
+    font-size: 30px;
+    line-height: 50px;
+    word-spacing: 5px;
+}
+
+.consultant-image .button-started
+{
+    padding: 15px 80px;
+    font-size: 20px;
+}
+}
+
+@media(max-width:992px)
+{
+
+.inner-div
+{
+    border: 2.5vw solid #ffbe0b;
+}
+
+
+.second-experiance-section
+{
+    margin-top: 5rem;
+}
+
+.setImg
+{
+    margin-bottom:7rem ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+#root
+{
+display: flex;
+flex-direction: column;
+min-height: 100vh;  
+}
+
+main
+{
+flex:  1 0 auto;
+}
+
+
+
+
+
+.logBtn 
+{
+background-color:#ffbe0b;
+border: none;
+outline: none;
+text-align: center;
+margin: 5px;
+border-radius: 50px;
+padding: 10px 60px;
+color: black;
+text-decoration: none;
+font-weight: bold;
+}
+
+.logBtn:hover
+{
+background-color: black;
+color: #ffbe0b;
+outline: 1px solid #ffbe0b;
+}
+
+.heroTextBtn
+{
+color: black;
+text-decoration: none;
+}
+
+.logBtn:hover .heroTextBtn
+{
+color: #ffbe0b;
+}
+
+
+
+.Herotextcolor ,  .signUpColor , .loginColor , .signUpColor:hover
+{
+color: #ffbe0b;
+}
+
+.inputWidth
+{
+width: 40%; 
+}
+
+.inputWidthDesc
+{
+width: 87%;
+}
+
+
+
+
+.contactBox
+{
+background-color: black;
+
+}
+
+.backLogin
+{
+
+background-color: #ffbe0b;
+min-height: 100vh;
+clip-path: circle(90.7% at 0 51%);
+
+
+}
+
+footer
+{
+background-color: black;
+min-height: 400px;
+}
+
+.textColor
+{
+background-color: #ffbe0b;
+-webkit-background-clip: text;
+font-family: "Fira Sans";
+font-style: italic;
+-webkit-text-fill-color: transparent;
+}
+
+.iconColor{
+color: #ffbe0b;
+font-size: 20px;
+}
+
+.Buttons
+{
+padding: 10px;
+background-color: #ffbe0b;
+border: 0;
+outline: 0;
+border-radius: 5px;
+width: 30%;
+margin-left: 5%;
+}
+
+
+.bottomInput , textarea
+{
+outline: 0;
+color:white;
+border: 0;
+border-bottom: 2px solid rgb(77, 77, 77) !important;
+background-color: black;
+
+}
+
+
+.heroCard
+{
+position: absolute;
+max-width: 25%;
+padding: 50px;
+text-align: center;
+z-index: 100;
+background-color: whitesmoke;
+top: 10%;
+
+box-shadow: 0 2px 8px 4px rgba(178 , 178 , 178 , 0.45);
+border-radius: 1rem;
+}
+
+
+
+
+
+.imgSet
+{
+margin-top: 25%;
+opacity: 0.9;
+}
+
+
+
+
+
+h1
+{
+
+font-size: 50px;
+font-weight: bold;
+}
+
+.demo{
+display: block;
+/* color: white; */
+color: black;
+
+}
+
+
+
+.demo:hover{
+color: rgb(0, 0, 0);
+} 
+
+.memo
+{
+display: none;
+}
+
+.dropdown-toggle::after {
+display: none;
+}
+.btnLogin
+{
+background-color: #ffbe0b;
+border-radius: 51px;
+outline: 0;
+border: 0;
+font-weight: bold;
+width: 80%;
+}
+
+.loginColor , .loginColor:hover
+{
+color: #ffbe0b;
+}
+
+
+
+.heroText1
+{
+text-align: center;
+color:white;
+
+}
+
+.heroHeading1
+{
+font-size: 400%;
+font-weight: bold;
+margin-top: 20%;
+}
+
+@media(max-width:991px)
+{
+.heroHeading1
+{
+font-size: 350%;
+font-weight: bold;
+margin-top: 25%;
+}
+} 
+
+
+.heroText2
+{
+
+color:white;
+margin-top: 20%;
+}
+
+.heroHeading2
+{
+font-size: 300%;
+font-weight: bold;
+}
+
+.heroText1 p
+{
+margin-bottom: 0;
+}
+
+.heroUl{
+display: flex;
+justify-content: center;
+}
+
+
+.heroUl li
+{
+margin: 2%;
+list-style-type:square;
+}
+
+@media(max-width:767px)
+{
+.heroUl li
+{
+margin: 3%;
+list-style-type:square;
+font-size:15px;
+}
+
+}
+
+@media(max-width:500px)
+{
+.heroUl li
+{
+margin: 3%;
+list-style-type:square;
+font-size:12px;
+}
+
+}
+
+@media(max-width:410px)
+{
+.heroUl{
+
+display: none;
+}
+
+}
+
+.heroUl li::marker
+{
+color: #ffbe0b;
+}
+
+
+
+@media(max-width:1025px) and (max-height:1200px)
+{
+.heroText
+{
+
+color:white;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+.consultant-image
+{
+background : linear-gradient(rgba(33,33,33,0.9),rgba(33,33,33,0.9)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/shutterstock_2021639273-1-1-1440x810.jpg?alt=media&token=80be943e-4531-43e5-a8d5-ebd2691fefac') no-repeat top  fixed ;
+width: 100%;
+position: relative;
+height: 50vh;
+background-size: cover;
+margin-top: 18rem;
+}
+
+
+.font-set
+{
+    font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 50px;
+    word-spacing: 8px;
+}
+
+.button-started
+{
+    border: 0;
+    padding: 12px 80px;
+    top: 0.5rem;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 60px;
+    background-color: #ffbe0b;
+    margin-top: 1rem;
+    transition: .5s ease;
+}
+
+
+
+.imgSet-planning
+{
+    position: absolute;
+    right: 0;
+    height: auto;
+    bottom: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+        
+    .imgSet-planning {
+        position: absolute; 
+        max-width:  100%; 
+        height: 120%;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .imgSet-planning {
+        position: absolute; 
+        max-width:  100%; 
+        height: 60%;
+        
+    }
+    
+    .center-data
+    {
+        text-align: center;
+    }
+    
+
+.consultant-image
+{
+background : linear-gradient(rgba(33,33,33,0.9),rgba(33,33,33,0.9)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/shutterstock_2021639273-1-1-1440x810.jpg?alt=media&token=80be943e-4531-43e5-a8d5-ebd2691fefac') no-repeat top  fixed ;
+width: 100%;
+position: relative;
+height: 100vh;
+background-position: center;
+background-size: cover;
+
+}
+}
+
+
+@media (max-width: 431px) {
+    
+    .imgSet-planning {
+        position: absolute; 
+        max-width:  100%; 
+        height: 50%;
+        
+    }}
+
+
+    .pricing-plan
+    {
+        background-color: black;
+        margin-top: 10rem;
+
+    }
+
+    .pricing-plan p:nth-child(1)
+    {
+
+font-weight: 500;
+color: #ffbe0b;
+font-style: italic;
+font-size: 28px;
+font-family: "Fira Sans";
+text-align: center;
+    }
+
+    .pricing-plan h3
+    {
+        font-weight: 500;
+color: white;
+font-style: italic;
+font-size: 38px;
+font-family: "Fira Sans";
+text-align: center;
+    }
+
+    .pricing-plan p:nth-child(3)
+{
+color: grey;
+font-size: 18px;
+font-family: "Fira Sans";
+text-align: center;
+}
+
+.pricing-card
+{
+    padding: 60px 0;
+    margin-top: 5rem;
+    border-radius: 0;
+    border: 3px solid #ffbe0b ;
+    border-radius: 10px;
+}
+
+
+
+
+.pricing-card h3
+{
+    color: black;
+    font-weight: 500;
+    font-size: 28px;
+    font-family: "Fira Sans";
+    text-align: center;   
+}
+
+.pricing-card h2
+{
+    color: #ffbe0b;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Fira Sans";
+}
+
+
+.pricing-card ul li
+{
+    color: gray;
+    line-height: 35px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Fira Sans";
+}
+
+
+.pricing-card ul .pricing-icon
+{
+    color: #ffbe0b;
+    margin: 10px;
+}
+
+
+

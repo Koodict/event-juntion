@@ -1,0 +1,162 @@
+.main
+{
+    height: 100vh;
+    width: 100%;
+}
+
+video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.Service_image {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/service-hero.jpg?alt=media&token=78a3c692-5b3e-49cd-9ac7-10b003cdff7b');
+    background-position: bottom center;
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .Service_image h2
+{
+   color: #ffbe0b;
+   font-size: 2.5rem;
+   font-family: "Fira Sans";    
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 60vh;
+ }
+
+
+ .accordion-button
+ {
+background-color: white;
+ }
+
+.faqs-right p:nth-child(1)
+{
+color: #ffbe0b;
+font-style: italic;
+font-family: "Fira Sans";
+font-size: 15px;
+}
+
+.faqs-right p:nth-child(3) ,p:nth-child(4)
+{
+    color: grey;
+    font-family: "Fira Sans";
+    font-size: 15px; 
+}
+
+
+
+
+
+ .service-section3-img
+{
+background : linear-gradient(rgba(33,33,33,0.8),rgba(33,33,33,0.8)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/about-img3.png?alt=media&token=ae916ca8-b006-4c68-ab1b-a058fba66726') no-repeat top  fixed ;
+width: 100%;
+height: auto;
+background-size: cover;
+
+} 
+
+.icon-service
+{
+    font-size: 4rem;
+    color: #ffbe0b;
+}
+
+
+
+
+
+.videoCard
+{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+   background-color: black;
+
+}
+
+ .videoCard .cardContent
+{
+    gap: 2rem;
+    padding: 2rem 1rem;
+
+}
+
+.cardContent .cardText h2
+{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.cardText p
+{
+    color: white;
+    opacity: .7;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+} 
+
+
+.cardContent .cardVideo
+{
+    border: 2px solid #ffbe0b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardVideo iframe
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media(min-width:720px)
+{
+.about .secContainer .videoCard .cardContent
+{
+    gap: 4rem;
+    padding: 4rem 3rem;
+}
+.about .secContainer .videoCard .cardContent .cardText h2
+{
+font-size: 2rem;
+}
+
+.about .secContainer .videoCard .cardContent .cardText p
+{
+opacity: .7;
+font-size: 15px;
+}
+
+.about .secContainer .videoCard .cardContent
+{
+grid-template-columns: repeat(2,1fr) !important ;
+}
+
+}
+
+
+@media(min-width:1024px)
+{
+.about .secContainer .mainContent
+{
+padding: 2.5rem 0;
+}
+
+}

@@ -1,0 +1,380 @@
+
+
+
+/* 
+
+///////////////////////////////////// About
+ */
+
+
+
+ 
+ 
+ .About_image {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/Time100-Gala-45.jpg?alt=media&token=f9e7ab7f-c11e-4363-882b-0b6565d02a93');
+  background-position: bottom center;
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.overlay{
+   background-color: rgba(0, 0, 0, 0.7);
+   width: 100%;
+   height: 60vh;
+}
+
+
+.main-content-about
+{
+ margin-top: 10rem;
+}
+
+.main-content-about h2
+{
+   color: #ffbe0b;
+   font-size: 2.5rem;
+   font-family: "Fira Sans";    
+}
+
+.main-content-about .center-content
+{
+   display: flex;
+}
+
+.main-content-about a
+{
+color: #ffbe0b;
+margin-right: 0.6rem;
+}
+
+.main-content-about p
+{
+   color: white;
+}
+
+
+
+
+
+
+.img-outer-set
+{
+position: relative;
+width: 100%;
+}
+
+.bottom-about
+{
+   margin-top: 10rem;
+  
+}
+
+.bottom-about h3
+{
+   font-family: "Fira Sans";
+   font-style: italic;
+   color: #ffbe0b;
+   text-align: center;
+}
+
+.bottom-about h2
+{
+   font-family: "Fira Sans"; 
+   text-align: center; 
+}
+
+.bottom-about p
+{
+   color: gray;
+   font-size: 15px;
+}
+
+
+
+.imgset-about
+{
+   position: relative;
+   max-width: 80%;
+   z-index: 1000;   
+}
+
+
+.about-inner-img
+{
+   position: absolute;
+   height: 80%;
+   width: 45%;
+   border: 5vw solid #ffbe0b;
+   top: -6.5%;
+   right:15%;
+}
+
+
+
+.about-inner-section2
+{
+background-color: rgb(245, 245, 245);
+width:100%;
+height: 100vh;
+margin-top: 10rem;
+
+}
+
+
+.about-section4
+{
+ font-family: "Fira Sans";  
+ margin-top: 5rem;
+ font-style: italic;
+ text-align: center;
+ font-size: 20px;
+ font-weight: bold;
+}
+
+.about-section4 p:nth-child(1)
+{
+ font-size: 18px;
+ color: #ffbe0b;
+}
+
+.about-section4 h3
+{
+ font-family: "Fira Sans";
+}
+
+.about-section4 p:nth-child(3)
+{
+ font-size: 15px;
+ color: grey;
+}
+
+.about-icon
+{
+ color: #ffbe0b;
+ font-size: 3rem;
+}
+
+.about-left-section
+{
+  margin-top: 8rem;
+}
+.card-inner
+{
+ border-bottom: 3px solid #ffbe0b;
+ display: grid;
+ place-items: center;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.card-inner p:nth-child(2)
+{
+ font-family: "Fira Sans";
+ font-size: 20px;
+ font-weight: 700;
+ font-style: italic;
+}
+
+.card-inner p:nth-child(3)
+{
+ color: grey;
+}
+
+@media(max-width:991px)
+{
+ .card-inner p:nth-child(2)
+{
+
+ font-size: 18px;
+ 
+}
+
+.card-inner p:nth-child(3)
+{
+ color: grey;
+ font-size: 12px;
+}
+
+
+}
+
+
+
+
+
+.card-overlay-about {
+ position: relative;
+ width: 100%;
+ height: auto;
+ margin-top: 5rem;
+ overflow: hidden;
+}
+
+.card-overlay-about img {
+ width: 100%;
+ height: auto;
+ transition: transform 0.3s ease;
+}
+
+
+
+.overlay-data-about {
+ position: absolute;
+ bottom: 0; /* Change from top: 0 to bottom: 0 */
+ left: 0;
+ width: 100%;
+ border-radius: 10px;
+ height: 0;
+ background-color: rgba(0, 0, 0, 0.5); /* Orange overlay with transparency */
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: height 0.3s ease; /* Change opacity to height for animation */
+}
+
+.card-overlay-about:hover .overlay-data-about {
+ height: 100%; /* Change opacity to height for animation */
+}
+
+.image {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.about-card-data
+{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ffbe0b;
+}
+
+
+.bottom-card
+{
+ background-color: white;
+ max-width: 100%;
+ height: auto;
+ position: absolute;
+ bottom: -4%;
+ z-index: 1000;
+ text-align: center;
+ padding: 10px 30px;
+ display: grid;
+ border-radius: 10%;
+ place-items: center;
+ 
+}
+
+.bottom-about h5
+{
+ color: #ffbe0b;
+ font-family:  "Fira Sans";
+ 
+}
+
+.bottom-card p
+{
+ color: grey;
+ font-size: 15px;
+ font-weight: bold;
+ line-height: 1px;
+ font-family: "Fira Sans";
+ font-style: italic;
+}
+
+.bottom-card h5
+{
+ color: #ffbe0b;
+ font-size:20px;
+ font-weight: bold;
+ font-family: "Fira Sans";
+}
+
+.about-section3 h3
+{
+ font-family: "Fira Sans";
+ font-size: 25px;
+ font-style: italic;
+ color: #ffbe0b; 
+ text-align: center;
+ line-height: 34px;
+}
+
+.about-section3 p
+{
+ font-family: "Fira Sans";
+ font-size: 15px;
+ font-style: italic;
+ color: white; 
+ text-align: center;
+ line-height: 21px; 
+}
+
+.about-section3 .about-btn
+{
+text-align: center;
+}
+
+
+.about-section3-img
+{
+background : linear-gradient(rgba(33,33,33,0.8),rgba(33,33,33,0.8)),url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/about-img3.png?alt=media&token=ae916ca8-b006-4c68-ab1b-a058fba66726') no-repeat top  fixed ;
+width: 100%;
+height: auto;
+display: grid;
+margin-top: 10rem;
+padding: 5rem 0;
+place-items: center;
+background-size: cover;
+
+}
+
+@media(max-width:767px)
+{
+   .about-section3-img
+{
+margin-top: 40rem;
+}
+}
+
+@media(max-width:420px)
+{
+ .about-section3 h3
+ {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffbe0b;
+ }
+
+ .about-section3 p
+ {
+  font-size: 12px;
+  line-height: 15px;
+ }
+.team-font-set h1
+{
+  font-size: 16px;
+}
+.about-section3 .logBtn
+{
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
+}
+
+.border-about-card
+{
+  border-radius: 1rem;
+  border: none;
+  
+}

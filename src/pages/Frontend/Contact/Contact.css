@@ -1,0 +1,33 @@
+.About_image {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/eventapp-ceb2c.appspot.com/o/Time100-Gala-45.jpg?alt=media&token=f9e7ab7f-c11e-4363-882b-0b6565d02a93');
+    background-position: bottom center;
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+.contact-right p:nth-child(1)
+{
+    font-size: 2rem;
+    color: #ffbe0b;
+    font-style: italic;
+    font-family: "Fira Sans";
+}
+
+.contact-icon
+{
+    font-size: 3rem;
+    color: #ffbe0b;
+}
+
+.contact-right .contact-right-inner h3
+{
+    font-family: "Fira Sans";
+}
+
+.contact-right .contact-right-inner p
+{
+    color: grey;
+}

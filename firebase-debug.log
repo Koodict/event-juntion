@@ -1,0 +1,38 @@
+[debug] [2024-05-13T19:38:36.139Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T19:38:36.145Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usama Irshad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T19:38:36.146Z] CLI Version:   13.7.5
+[debug] [2024-05-13T19:38:36.146Z] Platform:      win32
+[debug] [2024-05-13T19:38:36.147Z] Node Version:  v20.11.1
+[debug] [2024-05-13T19:38:36.147Z] Time:          Tue May 14 2024 00:38:36 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-05-13T19:38:36.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T19:38:36.309Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T19:38:36.310Z] > authorizing via signed-in user (irshadusama27@gmail.com)
+[debug] [2024-05-13T19:38:36.311Z] [iam] checking project event-junction-145 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2024-05-13T19:38:36.315Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions [none]
+[debug] [2024-05-13T19:38:36.315Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions x-goog-quota-user=projects/event-junction-145
+[debug] [2024-05-13T19:38:36.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2024-05-13T19:38:47.585Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasedatabase.instances.update\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions failed, reason: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2024-05-13T19:38:47.586Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/event-junction-145:testIamPermissions
+[debug] [2024-05-13T19:38:47.588Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 [none]
+[debug] [2024-05-13T19:38:51.342Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 200
+[debug] [2024-05-13T19:38:51.342Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 {"projectId":"event-junction-145","projectNumber":"296213774900","displayName":"Event-Junction","name":"projects/event-junction-145","resources":{"hostingSite":"event-junction-145","realtimeDatabaseInstance":"event-junction-145-default-rtdb","storageBucket":"event-junction-145.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_01f2d45e-56fa-4896-9198-918d25d6f8a7"}
+[debug] [2024-05-13T19:38:51.343Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 [none]
+[debug] [2024-05-13T19:38:51.654Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 200
+[debug] [2024-05-13T19:38:51.655Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/event-junction-145 {"projectId":"event-junction-145","projectNumber":"296213774900","displayName":"Event-Junction","name":"projects/event-junction-145","resources":{"hostingSite":"event-junction-145","realtimeDatabaseInstance":"event-junction-145-default-rtdb","storageBucket":"event-junction-145.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_01f2d45e-56fa-4896-9198-918d25d6f8a7"}
+[info] 
+[info] === Deploying to 'event-junction-145'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-05-13T19:38:51.662Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/event-junction-145/locations/-/instances/event-junction-145-default-rtdb [none]
+[debug] [2024-05-13T19:38:54.523Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/event-junction-145/locations/-/instances/event-junction-145-default-rtdb 200
+[debug] [2024-05-13T19:38:54.524Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/event-junction-145/locations/-/instances/event-junction-145-default-rtdb {"name":"projects/296213774900/locations/asia-southeast1/instances/event-junction-145-default-rtdb","project":"projects/296213774900","databaseUrl":"https://event-junction-145-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-05-13T19:38:54.531Z] >>> [apiv2][query] PUT https://event-junction-145-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json dryRun=true
+[debug] [2024-05-13T19:38:54.531Z] >>> [apiv2][body] PUT https://event-junction-145-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json "{\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}"
+[debug] [2024-05-13T19:38:55.779Z] <<< [apiv2][status] PUT https://event-junction-145-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-05-13T19:38:55.780Z] <<< [apiv2][body] PUT https://event-junction-145-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json {"status":"ok"}
+[info] +  database: rules syntax for database event-junction-145-default-rtdb is valid 
+[debug] [2024-05-13T19:38:55.794Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/event-junction-145/versions [none]
+[debug] [2024-05-13T19:38:55.794Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/event-junction-145/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-05-13T19:38:58.632Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/event-junction-145/versions 200
